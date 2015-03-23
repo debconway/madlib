@@ -13,9 +13,13 @@ $(document).ready(function() {
 		console.log(exclamation);
 
 		var mad_lib = "'" + exclamation + "!' he said, as he " + adverb + " jumped onto his " + noun + " and " + verb + " into the sunset.";
-
-		$("#para").html("<h1>"+mad_lib+"</h1>");
-
+		
+		$("#para").hide();
+		$("#para").html("<h1>"+mad_lib+"</h1>").css('color', '#0000ff').fadeIn("slow");
+		//$("#para")..fadeToggle();
+		 
+		
+		//$this.addclass("#shd")
 		console.log(mad_lib);
 
 	});
